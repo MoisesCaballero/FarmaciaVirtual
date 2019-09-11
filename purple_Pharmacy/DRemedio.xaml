@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="purple_Pharmacy.Views.DetailMedicametos">
+
+
+
+    <StackLayout Orientation="Vertical" Margin="10" Spacing="10" x:Name="Datos">
+        <Image Source="{Binding ImageUrl}" WidthRequest="250"/>
+
+        <Label Text="{Binding FullName}" 
+               HorizontalOptions="Center"
+               FontAttributes="Bold"
+               FontSize="Large"/>
+
+
+
+        <StackLayout Orientation="Horizontal" 
+                     HorizontalOptions="FillAndExpand">
+
+            <Label Text="Nombre " 
+               HorizontalOptions="StartAndExpand"
+               FontAttributes="Bold"
+               FontSize="Large"/>
+
+
+            <Label Text="{Binding NombreGenerico}" 
+               VerticalOptions="Center"
+               FontAttributes="Bold"
+               FontSize="Large"/>
+
+        </StackLayout>
+
+        <StackLayout Orientation="Horizontal" 
+                    HorizontalOptions="FillAndExpand">
+
+
+            <Label Text="REF" 
+            HorizontalOptions="StartAndExpand"
+               FontAttributes="Bold"
+               FontSize="Large"/>
+
+
+            <Label Text="{Binding Codigo}" 
+               VerticalOptions="Center"
+               FontAttributes="Bold"
+               FontSize="Large"/>
+
+
+
+
+        </StackLayout>
+
+
+        <StackLayout Orientation="Horizontal"  HorizontalOptions="FillAndExpand">
+
+            <Label Text="Precio" 
+               HorizontalOptions="StartAndExpand"
+               FontAttributes="Bold"
+               FontSize="Large"/>
+
+
+            <Label Text="{Binding Precio}" 
+               VerticalOptions="Center"
+               FontAttributes="Bold"
+               FontSize="Large"/>
+
+        </StackLayout>
+
+
+        <Button Text="REALIZAR PEDIDO" Command="{Binding Comprar} "
+               HorizontalOptions="Center"
+               FontAttributes="Bold"
+               x:Name="btcomprar"
+               FontSize="Large"
+               />
+
+
+
+
+    </StackLayout>
+
+
+
+</ContentPage>

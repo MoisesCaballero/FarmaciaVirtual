@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="purple_Pharmacy.Views.LoginPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <ScrollView   BindingContext="{Binding Login}"  >
+                <StackLayout Padding="5">
+                    <Image Source="farmacia.png" WidthRequest="200"></Image>
+                    <Entry  Placeholder="Usuario" 
+                                x:Name="txtUsuario"                               >
+                    </Entry>
+
+                    <Entry Placeholder="Password" 
+                               x:Name="txtPassword"
+                               IsPassword="true">
+                    </Entry>
+                    <Button
+                        Clicked="BtLogin_Clicked"
+                        Text="Login"
+                        x:Name="btLogin">
+                    </Button>
+                </StackLayout>
+            </ScrollView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
