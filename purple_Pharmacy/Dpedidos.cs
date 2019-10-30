@@ -15,6 +15,8 @@ namespace purple_Pharmacy.Views
         public DetailOrders()
         {
             InitializeComponent();
+            
         }
+        
     }
 }

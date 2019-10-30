@@ -74,7 +74,8 @@
         <Button Text="REALIZAR PEDIDO" Command="{Binding Comprar} "
                HorizontalOptions="Center"
                FontAttributes="Bold"
-               x:Name="btcomprar"
+               x:Name="comprar"
+               Clicked="Cargar_Click"
                FontSize="Large"
                />
 

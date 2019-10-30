@@ -17,11 +17,12 @@ namespace purple_Pharmacy.Views
         {
 
             InitializeComponent();
-            
+          
 
 
         }
-        async void OnItemSelected(object sender, SelectedItemChangedEventArgs e)
+        
+         private async void OnItemSelected(object sender, SelectableItemsView e)
         {
             if (ListDatos.SelectedItem != null)
             {

@@ -17,11 +17,11 @@ namespace purple_Pharmacy.Views
         public LoginPage()
         {
             InitializeComponent();
-            btLogin.Clicked += BtLogin_Clicked;
+            Home.Clicked += Home_Click;
         }
 
 
-        private async void BtLogin_Clicked(object sender, EventArgs e)
+        private async void Home_Click(object sender, EventArgs e)
         {
 
 

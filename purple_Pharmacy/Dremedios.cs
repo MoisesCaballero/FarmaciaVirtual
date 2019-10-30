@@ -17,12 +17,18 @@ namespace purple_Pharmacy.Views
         {
             InitializeComponent();
             LoadData(product);
+            
         }
 
         private void LoadData(Product contact)
         {
             Datos.BindingContext = contact;
         }
+        async private void Cargar_Click(object sender, EventArgs e)
+        {
+            await DisplayAlert("COMPLETADO", "La reserva se hagenerado correctamente", "Aceptar");
+        }
+
 
     }
 }

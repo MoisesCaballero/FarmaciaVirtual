@@ -6,10 +6,31 @@
              mc:Ignorable="d"
              x:Class="purple_Pharmacy.Views.DomicilioPage">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Abre el menu Hamburguesa para mas OPCIONES EN TU FARMACIA VIRTUAL" FontSize="Subtitle" HeightRequest="46"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+        <Grid>
+
+            <Image Source="fondo5.jpg" Aspect="AspectFill"/>
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+
+                <Image Grid.Row="0" Source="logo.jpg" WidthRequest="200" HeightRequest="200" Margin="0,50,0,30"/>
+
+                <StackLayout Grid.Row="1" Padding="70,100">
+                    <StackLayout>
+
+                        <Label  TextColor="White" Text="Bienvenido a Farmacia Purpura, pide tus domicilios de farmacia y drogueria de manera rapida y segura."/>
+
+                    </StackLayout>
+                </StackLayout>
+
+
+
+            </Grid>
+
+        </Grid>
     </ContentPage.Content>
 </ContentPage>
